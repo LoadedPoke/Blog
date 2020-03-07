@@ -1,7 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const config = require('./config');
+
 const app = express();
-const port = 3000;
 
 app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -15,4 +16,4 @@ app.post('/create', (req, res) => {
     res.redirect('/');
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(config.PORT, () => console.log(`Example app listening on port ${config.PORT}!`));
