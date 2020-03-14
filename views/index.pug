@@ -6,5 +6,7 @@ html(lang="en")
     body
         a(href="/create") Add
         ul
-            each item in arr
-                li= item
+            each post in posts
+                li
+                    h2 #{post.title}
+                    p #{post.body}
