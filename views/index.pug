@@ -3,6 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         title Document
+    include includes/header
     body
         a(href="/create") Add
         ul
@@ -10,3 +11,4 @@ html(lang="en")
                 li
                     h2 #{post.title}
                     p #{post.body}
+    include includes/footer
