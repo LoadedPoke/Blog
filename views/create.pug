@@ -1,12 +1,10 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        title Document
-    include includes/header
+    include includes/head
     body
+        include includes/header
         form(method="POST")
             input(type="text" name="title")
             textarea(name="body" cols="30" rows="7")
             button(type="submit") Submit
-    include includes/footer
+        include includes/footer
